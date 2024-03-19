@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Compute BMI</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Check your BMI</h1>
+        <form action="BMICalculation.jsp" method="post">
+            <label for="height">Height(in metres)</label>
+            <input type="number" name="height" id="height" min="0.3" max="2.5" step="0.01" required>
+            <br>
+            <label for="weight">Weight(in kilograms)</label>
+            <input type="number" name="weight" id="weight" min="20" max="1000" step="0.01" required>
+            <br>
+            <input type="submit" value="Compute BMI">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>

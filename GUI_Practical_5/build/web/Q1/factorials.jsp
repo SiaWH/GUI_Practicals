@@ -17,17 +17,17 @@
             <th>Number</th>
             <th>Factorial</th>
         </tr>
-        <% 
-            // Calculate and display factorials for numbers from 1 to 9
-            for (int i = 1; i <= 9; i++) {
-                int factorial = 9;
-                for (int j = 1; j <= i; j++) {
-                    factorial *= j;
-                }
+        <%! private long computeFactorial(int n) {
+                if (n == 0)
+                return 1;
+                else
+                return n * computeFactorial(n - 1);
+            }
         %>
+        <% for(int i = 1; i < 10; i++) { %>
         <tr>
             <td><%= i %></td>
-            <td><%= factorial %></td>
+            <td><%= computeFactorial(i) %></td>
         </tr>
         <% } %>
     </table>

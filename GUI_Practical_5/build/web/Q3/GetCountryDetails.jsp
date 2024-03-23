@@ -18,11 +18,12 @@
             String name = request.getParameter("name").trim();
             String officialName = request.getParameter("officialName").trim();
             String capital = request.getParameter("capital").trim();
-
-            out.println("Country Name: " + name + "<br>");
-            out.println("Official Name: " + officialName + "<br>");
-            out.println("Capital: " + capital + "<br>");
         %>
+
+        <p>County Name: <%=name %></p>
+        <p>Official Name: <%=officialName %></p>
+        <p>Capital: <%=capital %></p>
+        
         <form action="SaveCountryDetails.jsp" method="post">
             <input type="hidden" name="name" value="<%= name %>">
             <input type="hidden" name="officialName" value="<%= officialName %>">

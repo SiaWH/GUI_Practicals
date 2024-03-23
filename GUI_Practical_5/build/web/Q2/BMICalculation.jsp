@@ -18,13 +18,12 @@
             BMI bmi = new BMI(Double.parseDouble(request.getParameter("weight")), 
                                 Double.parseDouble(request.getParameter("height")));
 
-            String output = "Height: " + String.format("%.2f", bmi.getHeight()) + " m<br>" +
-                            "Weight: " + String.format("%.1f", bmi.getWeight()) + " kg<br>" +
-                            "BMI: " + String.format("%.2f", bmi.getBMI()) + "<br>" +
-                            "Category: " + bmi.getStatus();
-
-            out.println(output);
+            String bmiValue = String.format("%.2f", bmi.getBMI());
 
         %>
+        <p>Height: <%=bmi.getHeight() %> m</p>
+        <p>Weight: <%=bmi.getWeight() %> kg</p>
+        <p>BMI: <%=bmiValue %></p>
+        <p>Category: <%=bmi.getStatus() %></p>
     </body>
 </html>

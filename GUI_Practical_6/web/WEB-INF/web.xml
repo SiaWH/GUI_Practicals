@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="5.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd">
+    <servlet>
+        <servlet-name>StudentDetails</servlet-name>
+        <servlet-class>Servlets.StudentDetails</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoanDetails</servlet-name>
+        <servlet-class>Servlets.LoanDetails</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CookiesServlet</servlet-name>
+        <servlet-class>Servlets.CookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentDetails</servlet-name>
+        <url-pattern>/Q1/StudentDetails</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoanDetails</servlet-name>
+        <url-pattern>/Q3/LoanDetails</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CookiesServlet</servlet-name>
+        <url-pattern>/Q1/CookiesServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

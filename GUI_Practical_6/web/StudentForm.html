@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Add New Student</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>New Student Details</h1>
+        <form action="StudentDetails" method="get">
+            <label for="id">Student ID</label>
+            <input type="text" name="id" id="id" minlength="10" maxlength="10" required>
+            <br><br>
+            <label for="ic">IC Number</label>
+            <input type="text" name="ic" id="ic" minlength="12" maxlength="12" required>
+            <br><br>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" minlength="1" required>
+            <br><br>
+            <label for="level">Level</label>
+            <input type="radio" name="level" id="foundation" value="F" checked>
+            <label for="foundation">Foundation</label>
+            <input type="radio" name="level" id="diploma" value="D">
+            <label for="diploma">Diploma</label>
+            <input type="radio" name="level" id="bachelor" value="B">
+            <label for="bachelor">Bachelor</label>
+            <br><br>
+            <label for="programme">Programme</label>
+            <select name="programme" id="programme" required>
+                <option value="IA">Information Systems Engineering</option>
+                <option value="IB">Business Information Systems</option>
+            </select>
+            <br><br>
+            <label for="yearOfStudy">Year of Study</label>
+            <input type="number" name="yearOfStudy" id="yearOfStudy" min="1" max="3" required>
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>

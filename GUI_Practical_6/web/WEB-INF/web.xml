@@ -14,14 +14,14 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>StudentDetails</servlet-name>
-        <url-pattern>/Q1/StudentDetails</url-pattern>
+        <url-pattern>/StudentDetails</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>LoanDetails</servlet-name>
-        <url-pattern>/Q3/LoanDetails</url-pattern>
+        <url-pattern>/LoanDetails</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>CookiesServlet</servlet-name>
-        <url-pattern>/Q1/CookiesServlet</url-pattern>
+        <url-pattern>/CookiesServlet</url-pattern>
     </servlet-mapping>
 </web-app>
